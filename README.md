@@ -4,15 +4,15 @@
 
 Dotfiles are hidden configuration files (like .bashrc, .vimrc, .gitconfig) used by Unix-based systems (Linux, macOS) to manage user settings. They start with a dot to keep them out of normal directory listings.
 
-The $XDG_CONFIG_HOME environment variable specifies where user-specific configuration files should be stored. If set, applications will look in this directory. If not set, it defaults to ~/.config. This helps keep configuration files organized and easy to manage.
+The [$XDG_CONFIG_HOME](https://specifications.freedesktop.org/basedir-spec/latest/index.html) environment variable specifies where user-specific configuration files should be stored. If set, applications will look in this directory. If not set, it defaults to ~/.config. This helps keep configuration files organized and easy to manage.
 
 ## Install GNU Stow
 
-GNU Stow is a symlink farm manager that makes it easier to manage the installation of software packages, especially when you want to keep configuration files and directories organized. It is particularly useful for managing dotfiles and setting up software configurations in a clean, organized manner.
+[GNU Stow](http://www.gnu.org/software/stow) is a symlink farm manager that makes it easier to manage the installation of software packages, especially when you want to keep configuration files and directories organized. It is particularly useful for managing dotfiles and setting up software configurations in a clean, organized manner.
 
 First, you need to install GNU Stow. On most Unix-like systems, you can do this through your package manager:
 
-On macOS (using homebrew):
+On macOS (using [homebrew](https://brew.sh)):
 
 ```bash
 homebrew install stow
@@ -123,5 +123,5 @@ The script simply iterates over each top level directory in the dotfiles reposit
 
 ## References
 
-- How I manage my dotfiles using GNU Stow[https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/]
-- GNU Stow[http://www.gnu.org/software/stow]
+- [How I manage my dotfiles using GNU Stow](https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/)
+- [GNU Stow](http://www.gnu.org/software/stow)
